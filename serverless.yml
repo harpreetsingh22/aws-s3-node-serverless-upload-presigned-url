@@ -12,7 +12,7 @@ provider:
   name: aws
   runtime: nodejs14.x
   stage: dev # change the stage if you want
-  region: us-east-1 # change the region if you want
+  region: ap-south-1 # change the region if you want
   lambdaHashingVersion: 20201221
   stackName: ${self:custom.bucketName} 
   apiName: ${self:custom.bucketName} 

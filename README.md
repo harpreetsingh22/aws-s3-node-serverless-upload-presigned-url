@@ -32,7 +32,7 @@ Open `serverless.yml` and edit:
   provider:
     ...
     stage:  # default is 'dev'
-    region:  # default is 'us-east-1'
+    region:  # default is 'ap-south-1'
     ...
 ```
 
@@ -69,19 +69,19 @@ Serverless: Checking Stack update progress...
 Service Information
 service: upload-to-s3-with-signedUrl
 stage: dev
-region: us-east-1
+region: ap-south-1
 stack: # bucket name
 resources: 14
 api keys:
   None
 endpoints:
-  GET - https://t8oh7r3yx8.execute-api.us-east-1.amazonaws.com/dev/uploadimgless
+  GET - https://t8oh7r3yx8.execute-api.ap-south-1.amazonaws.com/dev/uploadimgless
 functions:
   upload: uploadimgless
 layers:
   None
 ```
-The upload URL is the **'endpoints'** output. For example - https://t9oh8r2yx4.execute-api.us-east-1.amazonaws.com/dev/uploadimgless
+The upload URL is the **'endpoints'** output. For example - https://t9oh8r2yx4.execute-api.ap-south-1.amazonaws.com/dev/uploadimgless
 
 ### Testing with the frontend application
 The frontend code is saved in the frontend subdirectory.
